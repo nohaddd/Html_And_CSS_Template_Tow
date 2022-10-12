@@ -1,0 +1,663 @@
+/* Start Variables */
+:root {
+   
+    --section-padding: 20px;
+    --main-duration: 0.3s;
+}
+/* End Variables */
+/* Start Global Rules */
+*{  margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing:  border-box;
+}
+html {
+    scroll-behavior: smooth;
+} 
+body{
+    font-family: "Work Sans", sans-serif;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    background: url("../images/pexels-photo-5710764.jpg") no-repeat;
+    background-size: cover;
+    padding: 100px;
+}
+header{
+    
+    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 100px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+header ul li{
+    margin-right:30px;
+}
+header ul li a{
+    color: #fff;
+    font-weight: 1.2;
+    font-size: 25px;
+    margin-right:30px;
+    text-decoration: none;
+    /*transition: var(--main-duration);*/
+}
+
+
+/*.header  ul li a:hover {
+    padding-left: 25px;
+}*/
+header ul a:hover, .active{
+    background: #d33535;
+    color: #fff;
+    border-radius: 20px;
+    height: 5vh;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 25px;
+    
+    
+    
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.content .text {
+
+    padding-left: 100px;
+}
+.content .text h2{
+    color: #fff;
+    font-size: 30px;
+    line-height: 1.5em;
+    
+}
+
+.content .text p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 90px;
+    color:#fff;
+}
+.content .text h2:last-of-type {
+    padding-bottom: 20px;
+}
+.content a {
+    background: #ce5565;
+    color: #fff;
+    border-radius: 20px;
+    height: 5vh;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 25px;
+
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* End Global Rules */
+/* Start Component */
+.special-heading {
+    letter-spacing: -3;
+    margin: 20px auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 100px;
+    width: fit-content;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1px #333;
+    position: relative;
+}
+@media(max-width: 767px) {
+    .special-heading {
+        font-size: 60px;
+    } 
+}
+/* End Component */
+/* Start About Me */
+.aboutMe {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color:#eee
+}
+.aboutMe .aboutMe-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-gap: 100px;
+    margin-top: 100px;
+    
+}
+.aboutMe .aboutMe-content .col h2 {
+    color: indianred;;
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 20px;
+
+}
+.aboutMe .aboutMe-content .srv {
+    display: flex;
+    margin-bottom: 10px;
+    padding: 40px;
+}
+@media(max-width: 767px) {
+    .aboutMe .aboutMe-contentt .srv {
+        flex-direction: column;
+        text-align: center;
+       
+        
+    }
+    
+   
+}
+.aboutMe .aboutMe-content .srv .text span {
+    color: #aaa;
+}
+.aboutMe .aboutMe-content .srv .text p {
+    padding-bottom: 30px;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+
+.three{
+    padding-top: 100px;
+    min-height: 100vh;
+    display: flex;
+    
+  }
+  
+  .progress {
+    position: relative;
+    width: 600px;
+    height: 15px;
+    
+    border-radius: 20px;
+    background-color: white;
+    margin: 10px;
+  }
+  .progress span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 20px;
+    background-color: indianred;
+    transition: width 0.3s linear;
+  }
+  
+
+/*start of second row */
+  .con-comp{
+    margin-top: 90px;
+    padding-top: 90px;
+    
+    display: flex;
+    width: 100%;
+    
+}
+.con-comp .comp{
+    margin-right: 30px;
+    margin-top: -600px;
+    margin-bottom: 600px;
+    padding: 40px;
+    border: #ddd solid 5px;
+    
+}
+.comp h4{
+    font-size: 60px;
+    color: red;
+}
+.comp h5{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: rgba(70, 69, 69, 0.75);
+    font-weight: 400px;
+}
+/*start of left responsive styles*/
+@media only screen and (max-width:600px) {
+   
+    
+    .comp h4{
+        font-size: 16px;
+    }
+    .comp {
+        margin-right: 0px;
+        margin-top: 10px;
+        text-align: center;
+
+    }
+    .con-comp{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+}
+/*end of second row */
+/* Start My Services */
+.MyServices {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: var(--section-background);
+}
+.MyServices .MyServices-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+    grid-gap: 30px;
+    margin-top: 80px;
+}
+.MyServices .MyServices-content .card {
+    background-color: #eee;
+    border: #aaa 0,5px solid;
+    width:370px;
+    
+    
+
+}
+.MyServices .MyServices-content .card img {
+    max-width: 100%;
+    
+}
+.MyServices .MyServices-content .card .info {
+    padding: 20px;
+    
+}
+.MyServices .MyServices-content .card .info h3 {
+   font-size: 30px;
+   font-weight: bold;
+   color: #666;
+   padding-bottom: 20px;
+}
+.MyServices .MyServices-content .card .info h3 span {
+    color: #bbb;
+    padding-left: 25px;
+    font-size: 30px;
+    
+}
+.MyServices .MyServices-content .card .info h3:hover  span{
+    transition: 0.3s;
+    font-size: 50px;
+    color:#ce5565;
+    
+}
+
+
+.MyServices .MyServices-content .card .info p{
+    color: #999;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    padding-bottom: 20px;  
+}
+.MyServices .MyServices-content .card .info a {
+    background: #d33535;
+    color: #fff;
+    border-radius: 60px;
+    height: 5vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 25px;
+}
+/* End My Services */
+
+
+
+
+/* Start education */
+.education {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: #ddd;
+}
+.education .education-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-gap: 100px;
+    margin-top: 100px;
+    
+}
+.education .education-content .col:first-child  {
+
+    background-color: #eee;
+    border: #aaa 0,5px solid;
+    min-width: 600px;
+}
+.education .education-content .col:last-child  {
+    background-color: #eee;
+    border: #aaa 0,5px solid;
+    min-width: 600px;
+}
+
+.education  .education-content  .col {
+    position: relative;
+
+}
+
+
+
+.education  .education-content  .col::before  {
+    content: '';
+    width: 4%;
+    height: 4%;
+    background: red;
+    z-index: 1;
+    position: absolute;
+    clip-path: circle();
+    padding-top: 170px;
+
+}
+.education  .education-content  .col::after  {
+    content: '';
+    width: 0.4%;
+    height: -2px;
+    background: red;
+    z-index: 1;
+    position: absolute;
+    
+    padding-top: 70px;
+
+}
+
+
+
+
+
+
+
+.education  .education-content  .col .one {
+    display: flex;
+    padding-bottom: 15px 0;
+    margin-left: 50px;
+    
+    
+   
+   
+    
+}
+
+@media(max-width: 767px) {
+    .education .education-content .col:last-child  {
+        flex-direction: column;
+        text-align: center;
+    }
+   
+}
+.education .education-content .col  .one h5 {
+    margin: 0 0 20px;
+    padding-right: 10px;
+    color:rgb(137, 135, 135);
+    
+}  
+
+
+.education .education-content .col  .one i {
+    color:#aaa;
+    flex-basis: -20px;
+    
+    
+}
+
+.education .education-content .col h2 {
+    padding: 15px;
+    padding-bottom: 20px;
+    font-size: 50px;
+    font-weight: 400;
+    color: #ce5565;
+}
+
+
+.education .education-content .col  .text {
+    flex: 1;
+}
+.education .education-content .col  .text h3 {
+    margin-left: 50px;
+    
+}
+.education .education-content .col  .text p {
+    color: rgb(103, 102, 102);
+    font-weight: 300;
+    line-height: 1.6; 
+    font-size: 17px; 
+    padding-bottom: 20px; 
+    margin-left: 50px;
+}
+
+
+/* End education*/
+/*Start portfolio */
+
+.portfolio {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.portfolio .portfolio-content {
+    position: relative;
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+   grid-gap: 30px;
+   max-width: 100%;
+   margin-top: 40px;
+    
+}
+
+
+
+
+
+.teamBx
+{
+   position: relative;
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+   grid-gap: 30px;
+   max-width: 100%;
+   margin-top: 40px;
+}
+.teamBx .member
+{
+   position: relative;
+   color: #000;
+   min-height: 300px;
+   width: 360px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+.teamBx .member .imgBx
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+
+}
+.teamBx .member .imgBx img
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.teamBx .member  .details
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: rgb(216, 157, 157,60%);
+   transition: 0.2s;
+   opacity: 0;
+}
+.teamBx .member:hover .details
+{
+   opacity: 1;
+}
+.teamBx .member  .details h2
+{
+   color: #fff;
+   text-transform: uppercase;
+   font-size: 40px;
+   letter-spacing: 1px;
+
+}
+.teamBx .member  .details h2 span
+{
+   display: block;
+   font-size: 12px;
+   font-weight: 300;
+}
+
+
+
+
+
+/* End portfolio  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* End About Me */
+
+
+
+
+
